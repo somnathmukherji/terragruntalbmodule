@@ -1,6 +1,6 @@
-provider "aws" {
-  region = "ap-south-1"  
-}
+#provider "aws" {
+#  region = "ap-south-1"  
+#}
 
 resource "aws_security_group" "WEB_LB" {
   name        = "WEB_LB"
