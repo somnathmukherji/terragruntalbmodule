@@ -225,7 +225,7 @@ variable "target_groups" {
 variable "vpc_id" {
   description = "VPC id where the load balancer and other resources will be deployed."
   type        = string
-  default     = vpc-04162339f4a5e040c
+  default     = "vpc-04162339f4a5e040c"
 }
 
 variable "enable_waf_fail_open" {
