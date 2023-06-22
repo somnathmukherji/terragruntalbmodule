@@ -25,8 +25,8 @@ resource "aws_lb" "MYALB" {
   name               = "MYALB"
   internal           = false
   load_balancer_type = var.load_balancer_type
-  security_groups    = var.alb_security_group_ids
-  subnets            = var.alb_subnet_ids
+  security_groups    = var.security_groups
+  subnets            = var.subnets
   
   tags = {
     Name = "MYALB"
