@@ -206,13 +206,13 @@ variable "http_tcp_listeners_tags" {
 variable "security_groups" {
   description = "The security groups to attach to the load balancer. e.g. [\"sg-edcd9784\",\"sg-edcd9785\"]"
   type        = list(string)
-  default     = []
+  default     = ["sg-0173fd6a39496a9de"]
 }
 
 variable "alb_security_group_ids" {
   description = "The security groups to attach to the load balancer. e.g. [\"sg-edcd9784\",\"sg-edcd9785\"]"
   type        = list(string)
-  default     = ["sg-0173fd6a39496a9de"]
+  default     = []
 }
 
 
@@ -225,7 +225,7 @@ variable "target_groups" {
 variable "vpc_id" {
   description = "VPC id where the load balancer and other resources will be deployed."
   type        = string
-  default     = null
+  default     = vpc-04162339f4a5e040c
 }
 
 variable "enable_waf_fail_open" {
