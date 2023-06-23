@@ -145,7 +145,8 @@ variable "access_logs" {
 variable "subnets" {
   description = "A list of subnets to associate with the load balancer. e.g. ['subnet-1a2b3c4d','subnet-1a2b3c4e','subnet-1a2b3c4f']"
   type        = list(string)
-  default     = ["subnet-070afe3fd429c32ae","subnet-07c447e6352372592"]
+  #default     = ["subnet-070afe3fd429c32ae","subnet-07c447e6352372592"]
+   default     = null
 }
 
 variable "subnet_mapping" {
@@ -206,7 +207,8 @@ variable "http_tcp_listeners_tags" {
 variable "security_groups" {
   description = "The security groups to attach to the load balancer. e.g. [\"sg-edcd9784\",\"sg-edcd9785\"]"
   type        = list(string)
-  default     = ["sg-0173fd6a39496a9de"]
+  #default     = ["sg-0173fd6a39496a9de"]
+   default     = null
 }
 
 variable "alb_security_group_ids" {
@@ -225,7 +227,8 @@ variable "target_groups" {
 variable "vpc_id" {
   description = "VPC id where the load balancer and other resources will be deployed."
   type        = string
-  default     = "vpc-04162339f4a5e040c"
+  #default     = "vpc-04162339f4a5e040c"
+   default     = null
 }
 
 variable "enable_waf_fail_open" {
